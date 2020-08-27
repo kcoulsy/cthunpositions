@@ -755,10 +755,28 @@
       let store = {};
 
       if (!initialLoad) {
-        updateInputsWithStore();
         intialLoad = true;
+        if (window.location.hash) {
+          const storeFromHash = JSON.parse(
+            decodeURIComponent(window.location.hash.replace("#store=", ""))
+          );
+          if (Object.keys(storeFromHash).length) {
+            if (
+              confirm(
+                "It looks like you are trying to load from url, if you do you will lose any positions you have made. Do you want to continue?"
+              )
+            ) {
+              store = storeFromHash;
+              saveLocalStore();
+            }
+          }
+        }
+        updateInputsWithStore();
       }
-
+      function updateHash() {
+        window.location.hash =
+          "#store=" + encodeURIComponent(JSON.stringify(store));
+      }
       function saveLocalStore() {
         localStorage.setItem("cthun", JSON.stringify(store));
       }
@@ -780,6 +798,7 @@
             : "";
           // console.log(el.getAttribute('id'))
         });
+        updateHash();
       }
       inputEls.forEach((el) => {
         const id = el.getAttribute("id");
