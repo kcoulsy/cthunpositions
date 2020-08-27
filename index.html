@@ -242,6 +242,17 @@
           </div>
         </div>
       </div>
+      <div class="exporter">
+        <button id="pos-exporter">Export Positions</button>
+        <div class="importer">
+          <input
+            type="text"
+            id="pos-importer-string"
+            placeholder="Paste then click import"
+          />
+          <button id="pos-importer">Import Positions</button>
+        </div>
+      </div>
     </div>
     <style>
       body {
@@ -249,7 +260,12 @@
         width: 100vw;
         font-family: "Roboto", sans-serif;
       }
-
+      .exporter {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 25;
+      }
       .container {
         position: relative;
         height: 100%;
@@ -772,6 +788,33 @@
           updateInputsWithStore();
         });
         // console.log(el.getAttribute('id'))
+      });
+      document.querySelector("#pos-exporter").addEventListener("click", () => {
+        if (store["pos-importer-string"]) {
+          delete store["pos-importer-string"];
+        }
+        prompt("Copy this positions import string", JSON.stringify(store));
+      });
+      document.querySelector("#pos-importer").addEventListener("click", () => {
+        if (
+          confirm(
+            "If you import you will lose any existing posisions! Are you sure you want to continue?"
+          )
+        ) {
+          const importString = document.querySelector("#pos-importer-string")
+            .value;
+          if (importString && importString.length) {
+            try {
+              const newStore = JSON.parse(importString);
+              store = newStore;
+              console.log("updated store", store);
+              saveLocalStore();
+              updateInputsWithStore();
+            } catch (e) {
+              alert("Invalid String!");
+            }
+          }
+        }
       });
     </script>
   </body>
