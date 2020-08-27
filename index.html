@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>C'thun Positions</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="right-blocker"></div>
+      <div class="left-blocker"></div>
+      <div class="groups left">
+        <div class="group">
+          <input
+            id="gNNW"
+            class="group-input"
+            type="text"
+            placeholder="Group 1"
+          />
+          <input id="g1p1" type="text" placeholder="G1 P1" />
+          <input id="g1p2" type="text" placeholder="G1 P2" />
+          <input id="g1p3" type="text" placeholder="G1 P3" />
+          <input id="g1p4" type="text" placeholder="G1 P4" />
+          <input id="g1p5" type="text" placeholder="G1 P5" />
+        </div>
+        <div class="group">
+          <input
+            id="gNWW"
+            class="group-input"
+            type="text"
+            placeholder="Group 2"
+          />
+          <input id="g2p1" type="text" placeholder="G2 P1" />
+          <input id="g2p2" type="text" placeholder="G2 P2" />
+          <input id="g2p3" type="text" placeholder="G2 P3" />
+          <input id="g2p4" type="text" placeholder="G2 P4" />
+          <input id="g2p5" type="text" placeholder="G2 P5" />
+        </div>
+        <div class="group">
+          <input
+            id="gSWW"
+            class="group-input"
+            type="text"
+            placeholder="Group 3"
+          />
+          <input id="g3p1" type="text" placeholder="G3 P1" />
+          <input id="g3p2" type="text" placeholder="G3 P2" />
+          <input id="g3p3" type="text" placeholder="G3 P3" />
+          <input id="g3p4" type="text" placeholder="G3 P4" />
+          <input id="g3p5" type="text" placeholder="G3 P5" />
+        </div>
+        <div class="group">
+          <input
+            id="gSSW"
+            class="group-input"
+            type="text"
+            placeholder="Group 4"
+          />
+          <input id="g4p1" type="text" placeholder="G4 P1" />
+          <input id="g4p2" type="text" placeholder="G4 P2" />
+          <input id="g4p3" type="text" placeholder="G4 P3" />
+          <input id="g4p4" type="text" placeholder="G4 P4" />
+          <input id="g4p5" type="text" placeholder="G4 P5" />
+        </div>
+      </div>
+      <div class="groups right">
+        <div class="group">
+          <input
+            id="gSSE"
+            class="group-input"
+            type="text"
+            placeholder="Group 5"
+          />
+          <input id="g5p1" type="text" placeholder="G5 P1" />
+          <input id="g5p2" type="text" placeholder="G5 P2" />
+          <input id="g5p3" type="text" placeholder="G5 P3" />
+          <input id="g5p4" type="text" placeholder="G5 P4" />
+          <input id="g5p5" type="text" placeholder="G5 P5" />
+        </div>
+        <div class="group">
+          <input
+            id="gSEE"
+            class="group-input"
+            type="text"
+            placeholder="Group 6"
+          />
+          <input id="g6p1" type="text" placeholder="G6 P1" />
+          <input id="g6p2" type="text" placeholder="G6 P2" />
+          <input id="g6p3" type="text" placeholder="G6 P3" />
+          <input id="g6p4" type="text" placeholder="G6 P4" />
+          <input id="g6p5" type="text" placeholder="G6 P5" />
+        </div>
+        <div class="group">
+          <input
+            id="gNEE"
+            class="group-input"
+            type="text"
+            placeholder="Group 7"
+          />
+          <input id="g7p1" type="text" placeholder="G7 P1" />
+          <input id="g7p2" type="text" placeholder="G7 P2" />
+          <input id="g7p3" type="text" placeholder="G7 P3" />
+          <input id="g7p4" type="text" placeholder="G7 P4" />
+          <input id="g7p5" type="text" placeholder="G7 P5" />
+        </div>
+        <div class="group">
+          <input
+            id="gNNE"
+            class="group-input"
+            type="text"
+            placeholder="Group 8"
+          />
+          <input id="g8p1" type="text" placeholder="G8 P1" />
+          <input id="g8p2" type="text" placeholder="G8 P2" />
+          <input id="g8p3" type="text" placeholder="G8 P3" />
+          <input id="g8p4" type="text" placeholder="G8 P4" />
+          <input id="g8p5" type="text" placeholder="G8 P5" />
+        </div>
+      </div>
+      <div class="background-image"></div>
+      <div class="quarters">
+        <div class="quarter q12">
+          <div class="group-1">
+            <input
+              id="gNNW"
+              class="group-input"
+              type="text"
+              placeholder="Group 1"
+            />
+            <input id="g1p1" class="player-1" type="text" placeholder="G1 P1" />
+            <input id="g1p2" class="player-2" type="text" placeholder="G1 P2" />
+            <input id="g1p3" class="player-3" type="text" placeholder="G1 P3" />
+            <input id="g1p4" class="player-4" type="text" placeholder="G1 P4" />
+            <input id="g1p5" class="player-5" type="text" placeholder="G1 P5" />
+          </div>
+          <div class="group-2">
+            <input
+              id="gNWW"
+              class="group-input"
+              type="text"
+              placeholder="Group 2"
+            />
+            <input id="g2p1" class="player-1" type="text" placeholder="G2 P1" />
+            <input id="g2p2" class="player-2" type="text" placeholder="G2 P2" />
+            <input id="g2p3" class="player-3" type="text" placeholder="G2 P3" />
+            <input id="g2p4" class="player-4" type="text" placeholder="G2 P4" />
+            <input id="g2p5" class="player-5" type="text" placeholder="G2 P5" />
+          </div>
+        </div>
+        <div class="quarter q34">
+          <div class="group-3">
+            <input
+              id="gSWW"
+              class="group-input"
+              type="text"
+              placeholder="Group 3"
+            />
+            <input id="g3p1" class="player-1" type="text" placeholder="G3 P1" />
+            <input id="g3p2" class="player-2" type="text" placeholder="G3 P2" />
+            <input id="g3p3" class="player-3" type="text" placeholder="G3 P3" />
+            <input id="g3p4" class="player-4" type="text" placeholder="G3 P4" />
+            <input id="g3p5" class="player-5" type="text" placeholder="G3 P5" />
+          </div>
+          <div class="group-4">
+            <input
+              id="gSSW"
+              class="group-input"
+              type="text"
+              placeholder="Group 4"
+            />
+            <input id="g4p1" class="player-1" type="text" placeholder="G4 P1" />
+            <input id="g4p2" class="player-2" type="text" placeholder="G4 P2" />
+            <input id="g4p3" class="player-3" type="text" placeholder="G4 P3" />
+            <input id="g4p4" class="player-4" type="text" placeholder="G4 P4" />
+            <input id="g4p5" class="player-5" type="text" placeholder="G4 P5" />
+          </div>
+        </div>
+        <div class="quarter q56">
+          <div class="group-5">
+            <input
+              id="gSSE"
+              class="group-input"
+              type="text"
+              placeholder="Group 5"
+            />
+            <input id="g5p1" class="player-1" type="text" placeholder="G5 P1" />
+            <input id="g5p2" class="player-2" type="text" placeholder="G5 P2" />
+            <input id="g5p3" class="player-3" type="text" placeholder="G5 P3" />
+            <input id="g5p4" class="player-4" type="text" placeholder="G5 P4" />
+            <input id="g5p5" class="player-5" type="text" placeholder="G5 P5" />
+          </div>
+          <div class="group-6">
+            <input
+              id="gSEE"
+              class="group-input"
+              type="text"
+              placeholder="Group 6"
+            />
+            <input id="g6p1" class="player-1" type="text" placeholder="G6 P1" />
+            <input id="g6p2" class="player-2" type="text" placeholder="G6 P2" />
+            <input id="g6p3" class="player-3" type="text" placeholder="G6 P3" />
+            <input id="g6p4" class="player-4" type="text" placeholder="G6 P4" />
+            <input id="g6p5" class="player-5" type="text" placeholder="G6 P5" />
+          </div>
+        </div>
+        <div class="quarter q78">
+          <div class="group-7">
+            <input
+              id="gNEE"
+              class="group-input"
+              type="text"
+              placeholder="Group 7"
+            />
+            <input id="g7p1" class="player-1" type="text" placeholder="G7 P1" />
+            <input id="g7p2" class="player-2" type="text" placeholder="G7 P2" />
+            <input id="g7p3" class="player-3" type="text" placeholder="G7 P3" />
+            <input id="g7p4" class="player-4" type="text" placeholder="G7 P4" />
+            <input id="g7p5" class="player-5" type="text" placeholder="G7 P5" />
+          </div>
+          <div class="group-8">
+            <input
+              id="gNNE"
+              class="group-input"
+              type="text"
+              placeholder="Group 8"
+            />
+            <input id="g8p1" class="player-1" type="text" placeholder="G8 P1" />
+            <input id="g8p2" class="player-2" type="text" placeholder="G8 P2" />
+            <input id="g8p3" class="player-3" type="text" placeholder="G8 P3" />
+            <input id="g8p4" class="player-4" type="text" placeholder="G8 P4" />
+            <input id="g8p5" class="player-5" type="text" placeholder="G8 P5" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .right-blocker {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        background: #161616;
+        width: calc(50% - 450px);
+        z-index: 10;
+      }
+
+      .left-blocker {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        background: #161616;
+        width: calc(50% - 450px);
+        z-index: 10;
+      }
+
+      .groups {
+        z-index: 20;
+        position: absolute;
+      }
+
+      .groups.right {
+        right: 0;
+      }
+
+      .groups h3 {
+        margin: 0;
+        color: white;
+        text-align: center;
+      }
+
+      .groups .group {
+        display: flex;
+        flex-direction: column;
+        background: #4444ff;
+      }
+
+      .groups .group input {
+        text-align: center;
+        border: 1px solid grey;
+      }
+
+      .groups .group input.group-input {
+        background: transparent;
+        border: 0;
+        color: white;
+      }
+
+      .groups .group input.group-input::placeholder {
+        color: white;
+      }
+
+      input {
+        font-weight: bold;
+        background: #ffffff;
+        border: 0;
+      }
+
+      .background-image {
+        position: absolute;
+        background-image: url("./map.jpg");
+        background-repeat: no-repeat;
+        background-size: 200%;
+        top: 50%;
+        left: 50%;
+        background-position: top 50% left 50%;
+        transform: translate(calc(-50% - 100px), calc(-50% - 400px))
+          rotate(23deg);
+        width: 2000px;
+        height: 2000px;
+      }
+
+      .quarters {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 100% 100% 100% 100%;
+        overflow: hidden;
+      }
+
+      .quarter {
+        position: absolute;
+      }
+
+      .quarter.q12 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-450px, -450px);
+      }
+
+      .quarter.q34 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-450px, 0);
+      }
+
+      .quarter.q56 {
+        top: 50%;
+        left: 50%;
+        transform: translate(100%, 0%);
+      }
+
+      .quarter.q78 {
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -450px);
+      }
+
+      .quarter .group-input {
+        background: transparent;
+        font-size: 2rem;
+        width: 150px !important;
+        color: white;
+      }
+
+      .quarter .group-input::placeholder {
+        color: white;
+      }
+
+      .quarter .group-1 {
+        position: absolute;
+        border-style: solid;
+        border-width: 0 450px 450px 0;
+        border-color: transparent rgba(0, 123, 255, 0.1) transparent transparent;
+      }
+
+      .quarter .group-1 input {
+        position: absolute;
+        width: 75px;
+        z-index: 100;
+        text-align: center;
+      }
+
+      .quarter .group-1 input.group-input {
+        top: 45px;
+        left: 225px;
+      }
+
+      .quarter .group-1 input.player-1 {
+        top: 315px;
+        left: 360px;
+      }
+
+      .quarter .group-1 input.player-2 {
+        top: 180px;
+        left: 360px;
+      }
+
+      .quarter .group-1 input.player-3 {
+        top: 216px;
+        left: 247.5px;
+      }
+
+      .quarter .group-1 input.player-4 {
+        top: 112.5px;
+        left: 360px;
+      }
+
+      .quarter .group-1 input.player-5 {
+        top: 112.5px;
+        left: 157.5px;
+      }
+
+      .quarter .group-2 {
+        position: absolute;
+        border-style: solid;
+        border-width: 450px 0 0 450px;
+        border-color: transparent transparent transparent rgba(204, 0, 255, 0.1);
+      }
+
+      .quarter .group-2 input {
+        position: absolute;
+        width: 75px;
+        z-index: 100;
+        text-align: center;
+      }
+
+      .quarter .group-2 input.group-input {
+        top: -157.5px;
+        left: -450px;
+      }
+
+      .quarter .group-2 input.player-1 {
+        top: -45px;
+        left: -157.5px;
+      }
+
+      .quarter .group-2 input.player-2 {
+        top: -135px;
+        left: -225px;
+      }
+
+      .quarter .group-2 input.player-3 {
+        top: -56.25px;
+        left: -281.25px;
+      }
+
+      .quarter .group-2 input.player-4 {
+        top: -213.75px;
+        left: -337.5px;
+      }
+
+      .quarter .group-2 input.player-5 {
+        top: -67.5px;
+        left: -405px;
+      }
+
+      .quarter .group-3 {
+        position: absolute;
+        border-style: solid;
+        border-width: 450px 450px 0 0;
+        border-color: rgba(255, 199, 87, 0.2) transparent transparent
+          transparent;
+      }
+
+      .quarter .group-3 input {
+        position: absolute;
+        width: 75px;
+        z-index: 100;
+        text-align: center;
+      }
+
+      .quarter .group-3 input.group-input {
+        top: -337.5px;
+        left: 22.5px;
+      }
+
+      .quarter .group-3 input.player-1 {
+        top: -427.5px;
+        left: 315px;
+      }
+
+      .quarter .group-3 input.player-2 {
+        top: -337.5px;
+        left: 202.5px;
+      }
+
+      .quarter .group-3 input.player-3 {
+        top: -416.25px;
+        left: 180px;
+      }
+
+      .quarter .group-3 input.player-4 {
+        top: -247.5px;
+        left: 90px;
+      }
+
+      .quarter .group-3 input.player-5 {
+        top: -405px;
+        left: 45px;
+      }
+
+      .quarter .group-4 {
+        position: absolute;
+        border-style: solid;
+        border-width: 0 0 450px 450px;
+        border-color: transparent transparent rgba(54, 163, 187, 0.2)
+          transparent;
+      }
+
+      .quarter .group-4 input {
+        position: absolute;
+        width: 75px;
+        z-index: 100;
+        text-align: center;
+      }
+
+      .quarter .group-4 input.group-input {
+        top: 382.5px;
+        left: -225px;
+      }
+
+      .quarter .group-4 input.player-1 {
+        top: 112.5px;
+        left: -90px;
+      }
+
+      .quarter .group-4 input.player-2 {
+        top: 202.5px;
+        left: -180px;
+      }
+
+      .quarter .group-4 input.player-3 {
+        top: 247.5px;
+        left: -112.5px;
+      }
+
+      .quarter .group-4 input.player-4 {
+        top: 315px;
+        left: -270px;
+      }
+
+      .quarter .group-4 input.player-5 {
+        top: 360px;
+        left: -135px;
+      }
+
+      .quarter .group-5 {
+        position: absolute;
+        border-style: solid;
+        border-width: 450px 0 0 450px;
+        border-color: transparent transparent transparent rgba(173, 95, 29, 0.2);
+      }
+
+      .quarter .group-5 input {
+        position: absolute;
+        width: 75px;
+        z-index: 100;
+        text-align: center;
+      }
+
+      .quarter .group-5 input.group-input {
+        top: -67.5px;
+        left: -360px;
+      }
+
+      .quarter .group-5 input.player-1 {
+        top: -337.5px;
+        left: -427.5px;
+      }
+
+      .quarter .group-5 input.player-2 {
+        top: -225px;
+        left: -315px;
+      }
+
+      .quarter .group-5 input.player-3 {
+        top: -202.5px;
+        left: -427.5px;
+      }
+
+      .quarter .group-5 input.player-4 {
+        top: -135px;
+        left: -270px;
+      }
+
+      .quarter .group-5 input.player-5 {
+        top: -90px;
+        left: -427.5px;
+      }
+
+      .quarter .group-6 {
+        position: absolute;
+        border-style: solid;
+        border-width: 0 450px 450px 0;
+        border-color: transparent rgba(22, 179, 72, 0.2) transparent transparent;
+      }
+
+      .quarter .group-6 input {
+        position: absolute;
+        width: 75px;
+        z-index: 100;
+        text-align: center;
+      }
+
+      .quarter .group-6 input.group-input {
+        top: 112.5px;
+        left: 247.5px;
+      }
+
+      .quarter .group-6 input.player-1 {
+        top: 22.5px;
+        left: 67.5px;
+      }
+
+      .quarter .group-6 input.player-2 {
+        top: 112.5px;
+        left: 144px;
+      }
+
+      .quarter .group-6 input.player-3 {
+        top: 22.5px;
+        left: 202.5px;
+      }
+
+      .quarter .group-6 input.player-4 {
+        top: 180px;
+        left: 247.5px;
+      }
+
+      .quarter .group-6 input.player-5 {
+        top: 22.5px;
+        left: 337.5px;
+      }
+
+      .quarter .group-7 {
+        position: absolute;
+        border-style: solid;
+        border-width: 450px 450px 0 0;
+        border-color: rgba(87, 255, 179, 0.2) transparent transparent
+          transparent;
+      }
+
+      .quarter .group-7 input {
+        position: absolute;
+        width: 75px;
+        z-index: 100;
+        text-align: center;
+      }
+
+      .quarter .group-7 input.group-input {
+        top: -157.5px;
+        left: 292.5px;
+      }
+
+      .quarter .group-7 input.player-1 {
+        top: -45px;
+        left: 67.5px;
+      }
+
+      .quarter .group-7 input.player-2 {
+        top: -112.5px;
+        left: 135px;
+      }
+
+      .quarter .group-7 input.player-3 {
+        top: -45px;
+        left: 202.5px;
+      }
+
+      .quarter .group-7 input.player-4 {
+        top: -202.5px;
+        left: 270px;
+      }
+
+      .quarter .group-7 input.player-5 {
+        top: -45px;
+        left: 337.5px;
+      }
+
+      .quarter .group-8 {
+        position: absolute;
+        border-style: solid;
+        border-width: 0 0 450px 450px;
+        border-color: transparent transparent rgba(255, 87, 87, 0.2) transparent;
+      }
+
+      .quarter .group-8 input {
+        position: absolute;
+        width: 75px;
+        z-index: 100;
+        text-align: center;
+      }
+
+      .quarter .group-8 input.group-input {
+        top: 45px;
+        left: -427.5px;
+      }
+
+      .quarter .group-8 input.player-1 {
+        top: 315px;
+        left: -427.5px;
+      }
+
+      .quarter .group-8 input.player-2 {
+        top: 225px;
+        left: -337.5px;
+      }
+
+      .quarter .group-8 input.player-3 {
+        top: 180px;
+        left: -427.5px;
+      }
+
+      .quarter .group-8 input.player-4 {
+        top: 135px;
+        left: -270px;
+      }
+
+      .quarter .group-8 input.player-5 {
+        top: 112.5px;
+        left: -405px;
+      }
+    </style>
+    <script>
+      const inputEls = document.querySelectorAll("input");
+      let initialLoad = false;
+      let store = {};
+
+      if (!initialLoad) {
+        updateInputsWithStore();
+        intialLoad = true;
+      }
+
+      function saveLocalStore() {
+        localStorage.setItem("cthun", JSON.stringify(store));
+      }
+
+      function loadFromStore() {
+        const load = localStorage.getItem("cthun");
+        if (!load) {
+          store = {};
+          return;
+        }
+        store = JSON.parse(localStorage.getItem("cthun"));
+      }
+
+      function updateInputsWithStore() {
+        loadFromStore();
+        inputEls.forEach((el) => {
+          el.value = store[el.getAttribute("id")]
+            ? store[el.getAttribute("id")]
+            : "";
+          // console.log(el.getAttribute('id'))
+        });
+      }
+      inputEls.forEach((el) => {
+        const id = el.getAttribute("id");
+        el.addEventListener("keyup", (ev) => {
+          store[id] = ev.target.value;
+          saveLocalStore();
+          updateInputsWithStore();
+        });
+        // console.log(el.getAttribute('id'))
+      });
+    </script>
+  </body>
+</html>
